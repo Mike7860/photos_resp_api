@@ -1,0 +1,20 @@
+{% load static %}
+{% block content %}
+      {% for photo in photos %}
+              <hr>
+              <p class="card-text">{{ photo.albumId }}</p>
+              <p class="card-text">{{ photo.id }}</p>
+              <p class="card-text">{{ photo.title }}</p>
+              <p class="card-text">{{ photo.url }}</p>
+              <p class="card-text">{{ photo.width }}</p>
+              <p class="card-text">{{ photo.height }}</p>
+              <p class="card-text">{{ photo.dominant_color }}</p>
+              <a href="/photo/{{photo.id}}"
+            </div>
+          </div>
+          <br><br><br>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
